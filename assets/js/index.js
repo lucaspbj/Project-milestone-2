@@ -1,8 +1,11 @@
-// script.js
+// game choices
 const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+
+// user points and tries
 let userScore = 0;
 let tries = 3;
 
+// select all the buttons with id game
 const buttons = document.querySelectorAll("#game button");
 
 buttons.forEach((button) => {
@@ -52,7 +55,13 @@ function getResultText(result) {
 
 function endGame() {
     buttons.forEach((button) => {
-        button.removeEventListener("click", function () {});
+        button.removeEventListener("click", function () { });
     });
     document.getElementById("game").innerHTML = "<p>Game over!</p>";
 }
+
+var button = document.getElementById("refresh");
+
+button.addEventListener("click", function () {
+    location.reload();
+});
