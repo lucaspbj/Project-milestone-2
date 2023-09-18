@@ -1,29 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome and google fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
-    <div id="game">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-        <button id="lizard">Lizard</button>
-        <button id="spock">Spock</button>
-    </div>
+    <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock</h1>
+    <h2>Let's play!</h2>
+    
+
+        <button class="instruction-button">Instructions</button>
+
+        <div class="popup">
+            <div class="popup-content">
+                <span class="close-button">&times;</span>
+                <h2>Instructions</h2>
+                <p>The game is an expansion on the game Rock, Paper, Scissors. Each player picks a variable and reveals it at the
+                    same time. The winner is the one who defeats the others. In a tie, the process is repeated until a winner is
+                    found.</p>
+                <p>Scissors cuts Paper
+                    Paper covers Rock
+                    Rock crushes Lizard
+                    Lizard poisons Spock
+                    Spock smashes Scissors
+                    Scissors decapitates Lizard
+                    Lizard eats Paper
+                    Paper disproves Spock
+                    Spock vaporizes Rock
+                    (and as it always has) Rock crushes Scissors</p>
+            </div>
+        </div>
+
+    
+
+        <div class="game">
+            <button class="game-button" data-choice="rock">Rock</button>
+            <button class="game-button" data-choice="paper">Paper</button>
+            <button class="game-button" data-choice="scissors">Scissors</button>
+            <button class="game-button" data-choice="lizard">Lizard</button>
+            <button class="game-button" data-choice="spock">Spock</button>
+        </div>
+   
+    
     <div id="result">
         <p>Choose an option above to start the game.</p>
+        <p>Your choice: <span id="user-choice"></span></p>
+        <p>Computer's choice: <span id="computer-choice"></span></p>
         <p>Remaining tries: <span id="tries">3</span></p>
         <p>Score: <span id="score">0</span></p>
     </div>
-    <div id="refresh">
-        <button>New game</button>
+    
+    <div class="refresh">
+        <button class="refresh-button" style="display: none;">New game</button>
     </div>
 
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
