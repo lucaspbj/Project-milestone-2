@@ -4,44 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- font awesome and google fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta name="description" content="Rock, Paper, Scissors, Lizard, Spock game">
+    <meta name="keywords" content="game, fun, rock, paper, scissors, lizard, spock">
+    <!-- Font Awesome and Google Fonts stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Rock, Paper, Scissors, Lizard, Spock</title>
+    <!-- Link to custom stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock, Paper, Scissors, Lizard, Spock</title>
 </head>
 
 <body>
-    <h1 class="heading">Rock, Paper, Scissors, Lizard, Spock</h1>
-    <h2>Let's play!</h2>
-    
+    <main>
+        <!-- Game title with FontAwesome icons -->
+        <h1 class="heading"><i class="fa-regular fa-hand-back-fist"></i><i class="fa-regular fa-hand"></i><i
+                class="fa-regular fa-hand-scissors"></i><i class="fa-regular fa-hand-lizard"></i><i
+                class="fa-regular fa-hand-spock"></i></h1>
+        <h2>Have you ever played Rock, Paper, Scissors, Lizard, Spock?</h2>
+        <h3>Let's play!</h3>
 
+        <!-- Button to show game instructions -->
         <button class="instruction-button">Instructions</button>
 
+        <!-- Popup for game instructions -->
         <div class="popup">
             <div class="popup-content">
                 <span class="close-button">&times;</span>
                 <h2>Instructions</h2>
-                <p>The game is an expansion on the game Rock, Paper, Scissors. Each player picks a variable and reveals it at the
-                    same time. The winner is the one who defeats the others. In a tie, the process is repeated until a winner is
-                    found.</p>
-                <p>Scissors cuts Paper
+                <!-- Game instructions -->
+                <p>The game is an expansion on the game Rock, Paper, Scissors. To start the game, choose an option among
+                    Rock, Paper, Scissors, Lizard, and Spock.</p>
+                <p>Each player picks a variable and reveals it at the same time. The winner is the one who defeats the others. In a tie, the process is repeated until a winner is found.</p>
+                <p>Game Rules:
+                    <br>
+                    Scissors cuts Paper
+                    <br>
                     Paper covers Rock
+                    <br>
                     Rock crushes Lizard
+                    <br>
                     Lizard poisons Spock
+                    <br>
                     Spock smashes Scissors
+                    <br>
                     Scissors decapitates Lizard
+                    <br>
                     Lizard eats Paper
+                    <br>
                     Paper disproves Spock
+                    <br>
                     Spock vaporizes Rock
-                    (and as it always has) Rock crushes Scissors</p>
+                    <br>
+                    (and as it always has) Rock crushes Scissors
+                </p>
+                <p>At the end of the game, press "New game" for a new game.</p>
             </div>
         </div>
 
-    
+        <!-- Display game result -->
+        <div id="result">
+            <p>Choose an option below to start the game.</p>
+        </div>
 
+        <!-- Game buttons -->
         <div class="game">
             <button class="game-button" data-choice="rock">Rock</button>
             <button class="game-button" data-choice="paper">Paper</button>
@@ -49,20 +76,25 @@
             <button class="game-button" data-choice="lizard">Lizard</button>
             <button class="game-button" data-choice="spock">Spock</button>
         </div>
-   
-    
-    <div id="result">
-        <p>Choose an option above to start the game.</p>
-        <p>Your choice: <span id="user-choice"></span></p>
-        <p>Computer's choice: <span id="computer-choice"></span></p>
-        <p>Remaining tries: <span id="tries">3</span></p>
-        <p>Score: <span id="score">0</span></p>
-    </div>
-    
-    <div class="refresh">
-        <button class="refresh-button" style="display: none;">New game</button>
-    </div>
 
+        <!-- Display user's choice, computer's choice, remaining tries, and score -->
+        <div>
+            <p>Your choice: <span id="user-choice"></span></p>
+            <p>Computer's choice: <span id="computer-choice"></span></p>
+            <p>Remaining tries: <span id="tries">3</span></p>
+            <p>Score: <span id="score">0</span></p>
+        </div>
+
+        <!-- Button to start a new game (initially hidden) -->
+        <div class="refresh">
+            <button class="refresh-button" style="display: none;">New game</button>
+        </div>
+
+    </main>
+    <footer>
+        <!-- Footer content can be added here -->
+    </footer>
+    <!-- Include JavaScript file -->
     <script src="assets/js/script.js"></script>
 </body>
 
