@@ -11,26 +11,31 @@ document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".game-button");
     const refreshButton = document.querySelector(".refresh-button");
 
-    // Add click event listeners to each game button
-    buttons.forEach((button) => {
-        button.addEventListener("click", function () {
-            const userChoice = button.getAttribute("data-choice");
-            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+ // Add click event listeners to each game button
+buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+        const userChoice = button.getAttribute("data-choice");
+        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-            // Update user and computer choices in the HTML
-            document.getElementById("user-choice").textContent = `Your choice: ${userChoice}`;
-            document.getElementById("computer-choice").textContent = `Computer's choice: ${computerChoice}`;
+        // Update user and computer choices in the HTML
+        document.getElementById("user-choice").textContent = `Your choice: ${userChoice}`;
+        document.getElementById("computer-choice").textContent = `Computer's choice: ${computerChoice}`;
 
-            const result = getResult(userChoice, computerChoice);
-            updateUI(result);
+        // Update user and computer choice images
+        document.getElementById("user-choice-img").src = `assets/images/${userChoice}.png`;
+        document.getElementById("computer-choice-img").src = `assets/images/${computerChoice}.png`;
 
-            tries--;
+        const result = getResult(userChoice, computerChoice);
+        updateUI(result);
 
-            if (tries === 0) {
-                endGame();
-            }
-        });
+        tries--;
+
+        if (tries === 0) {
+            endGame();
+        }
     });
+});
+
 
     // Determine the game result based on user and computer choices
     function getResult(user, computer) {

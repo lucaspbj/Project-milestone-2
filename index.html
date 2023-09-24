@@ -19,10 +19,14 @@
 <body>
     <main>
         <!-- Game title with FontAwesome icons -->
-        <h1 class="heading"><i class="fa-regular fa-hand-back-fist"></i><i class="fa-regular fa-hand"></i><i
-                class="fa-regular fa-hand-scissors"></i><i class="fa-regular fa-hand-lizard"></i><i
-                class="fa-regular fa-hand-spock"></i></h1>
-        <h2>Have you ever played Rock, Paper, Scissors, Lizard, Spock?</h2>
+        <h1 class="heading">
+            <i class="fa-regular fa-hand-back-fist"></i>
+            <i class="fa-regular fa-hand"></i>
+            <i class="fa-regular fa-hand-scissors"></i>
+            <i class="fa-regular fa-hand-lizard"></i>
+            <i class="fa-regular fa-hand-spock"></i>
+        </h1>
+        <h2 class="heading-question">Have you ever played Rock, Paper, Scissors, Lizard, Spock?</h2>
         <h3>Let's play!</h3>
 
         <!-- Button to show game instructions -->
@@ -34,9 +38,9 @@
                 <span class="close-button">&times;</span>
                 <h2>Instructions</h2>
                 <!-- Game instructions -->
-                <p>The game is an expansion on the game Rock, Paper, Scissors. To start the game, choose an option among
-                    Rock, Paper, Scissors, Lizard, and Spock.</p>
-                <p>Each player picks a variable and reveals it at the same time. The winner is the one who defeats the others. In a tie, the process is repeated until a winner is found.</p>
+                <p>To start the game, choose an option among Rock, Paper, Scissors, Lizard, and Spock.</p>
+                <p>Each player picks a variable and reveals it at the same time. The winner is the one who defeats the
+                    others. In a tie, the process is repeated until a winner is found.</p>
                 <p>Game Rules:
                     <br>
                     Scissors cuts Paper
@@ -75,6 +79,18 @@
             <button class="game-button" data-choice="scissors">Scissors</button>
             <button class="game-button" data-choice="lizard">Lizard</button>
             <button class="game-button" data-choice="spock">Spock</button>
+        </div>
+
+        <!-- Display user's choice and computer's choice -->
+        <div class="choices">
+            <div class="user-choice">
+                <p>Your choice:</p>
+                <img id="user-choice-img" src="assets/images/rpsls.png" alt="User's Choice">
+            </div>
+            <div class="computer-choice">
+                <p>Computer's choice:</p>
+                <img id="computer-choice-img" src="assets/images/rpsls.png" alt="Computer's Choice">
+            </div>
         </div>
 
         <!-- Display user's choice, computer's choice, remaining tries, and score -->
