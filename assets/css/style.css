@@ -23,8 +23,22 @@ body {
     color: var(--text-color);
 }
 
-.heading-question{
+/* .heading-question{
 
+} */
+
+.choices {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.choice {
+    text-align: center; 
+    margin: 10px; 
+}
+
+.choice img {
+    max-width: 100%; 
 }
 
 footer{

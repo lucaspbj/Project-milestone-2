@@ -67,6 +67,17 @@
             </div>
         </div>
 
+        <!-- Level selection dropdown -->
+        <div class="level-selection">
+            <label for="level">Select Level:</label>
+            <select id="level">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            
+        </div>
+
         <!-- Display game result -->
         <div id="result">
             <p>Choose an option below to start the game.</p>
@@ -81,17 +92,18 @@
             <button class="game-button" data-choice="spock">Spock</button>
         </div>
 
-        <!-- Display user's choice and computer's choice -->
+        <!-- Display user's choice and computer's choice horizontally -->
         <div class="choices">
-            <div class="user-choice">
+            <div class="choice">
                 <p>Your choice:</p>
                 <img id="user-choice-img" src="assets/images/rpsls.png" alt="User's Choice">
             </div>
-            <div class="computer-choice">
+            <div class="choice">
                 <p>Computer's choice:</p>
                 <img id="computer-choice-img" src="assets/images/rpsls.png" alt="Computer's Choice">
             </div>
         </div>
+
 
         <!-- Display user's choice, computer's choice, remaining tries, and score -->
         <div>
