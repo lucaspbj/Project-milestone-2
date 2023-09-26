@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Initialize user points and remaining tries
     let userScore = 0;
-    let tries = 3; // Default to medium level (3 tries)
+    let tries = 5;
 
     // Select all the game buttons by class "game-button"
     const buttons = document.querySelectorAll(".game-button");
@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Get the level selection dropdown element
     const levelDropdown = document.getElementById("level");
 
+    initUi();
     // Add a change event listener to the level dropdown
     levelDropdown.addEventListener("change", function () {
         const selectedLevel = levelDropdown.value;
@@ -24,6 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (selectedLevel === "hard") {
             tries = 1; // Set to hard level (1 try)
         }
+        // console.log(
+        //     selectedLevel
+        // )
         // Update the remaining tries in the UI
         document.querySelector("#tries").textContent = tries;
     });
@@ -45,7 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const result = getResult(userChoice, computerChoice);
             updateUI(result);
 
-            tries--;
+
+            // tries--;
 
             if (tries === 0) {
                 endGame();
@@ -77,9 +82,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to update the UI with the game result and remaining tries
     function updateUI(result) {
+
+        tries--;
+
         document.querySelector("#result p").textContent = getResultText(result);
         document.querySelector("#tries").textContent = tries;
         document.querySelector("#score").textContent = userScore;
+
     }
 
     // Function to get the text representation of the game result
@@ -93,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function endGame() {
         // Remove click event listeners from game buttons
         buttons.forEach((button) => {
-            button.removeEventListener("click", function () {});
+            button.removeEventListener("click", function () { });
         });
         // Display "Game over!" message in the game container
         document.querySelector(".game").innerHTML = "<p>Game over!</p>";
@@ -101,7 +110,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show the "New Game" button when the game ends
         refreshButton.style.display = "block";
     }
+    function initUi() {
+        document.querySelector("#tries").textContent = tries;
+    }
+
 });
+
 
 
 // Additional code outside of the main game logic

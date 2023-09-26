@@ -26,80 +26,88 @@
             <i class="fa-regular fa-hand-lizard"></i>
             <i class="fa-regular fa-hand-spock"></i>
         </h1>
-        <h2 class="heading-question">Have you ever played Rock, Paper, Scissors, Lizard, Spock?</h2>
-        <h3>Let's play!</h3>
 
-        <!-- Button to show game instructions -->
-        <button class="instruction-button">Instructions</button>
+        <div class="game-area">
+            <h2 class="heading-question">Have you ever played Rock, Paper, Scissors, Lizard, Spock?</h2>
+            <h3>Let's play!</h3>
 
-        <!-- Popup for game instructions -->
-        <div class="popup">
-            <div class="popup-content">
-                <span class="close-button">&times;</span>
-                <h2>Instructions</h2>
-                <!-- Game instructions -->
-                <p>To start the game, choose an option among Rock, Paper, Scissors, Lizard, and Spock.</p>
-                <p>Each player picks a variable and reveals it at the same time. The winner is the one who defeats the
-                    others. In a tie, the process is repeated until a winner is found.</p>
-                <p>Game Rules:
-                    <br>
-                    Scissors cuts Paper
-                    <br>
-                    Paper covers Rock
-                    <br>
-                    Rock crushes Lizard
-                    <br>
-                    Lizard poisons Spock
-                    <br>
-                    Spock smashes Scissors
-                    <br>
-                    Scissors decapitates Lizard
-                    <br>
-                    Lizard eats Paper
-                    <br>
-                    Paper disproves Spock
-                    <br>
-                    Spock vaporizes Rock
-                    <br>
-                    (and as it always has) Rock crushes Scissors
-                </p>
-                <p>At the end of the game, press "New game" for a new game.</p>
+            <!-- Button to show game instructions -->
+            <button class="instruction-button">Instructions</button>
+
+            <!-- Popup for game instructions -->
+            <div class="popup">
+                <div class="popup-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Instructions</h2>
+                    <!-- Game instructions -->
+                    <p>To start the game, choose an option among Rock, Paper, Scissors, Lizard, and Spock.</p>
+                    <p>Each player picks a variable and reveals it at the same time. The winner is the one who defeats
+                        the
+                        others. In a tie, the process is repeated until a winner is found.</p>
+                    <p>Game Rules:
+                        <br>
+                        Scissors cuts Paper
+                        <br>
+                        Paper covers Rock
+                        <br>
+                        Rock crushes Lizard
+                        <br>
+                        Lizard poisons Spock
+                        <br>
+                        Spock smashes Scissors
+                        <br>
+                        Scissors decapitates Lizard
+                        <br>
+                        Lizard eats Paper
+                        <br>
+                        Paper disproves Spock
+                        <br>
+                        Spock vaporizes Rock
+                        <br>
+                        (and as it always has) Rock crushes Scissors
+                    </p>
+                    <p>At the end of the game, press "New game" for a new game.</p>
+                </div>
+            </div>
+
+            <!-- Level selection dropdown -->
+            <div class="level-selection">
+                <label for="level">Select Level:</label>
+                <select id="level">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+
+            </div>
+
+            <!-- Display game result -->
+            <div id="result">
+                <p>Choose an option below to start the game.</p>
+            </div>
+
+            <!-- Game buttons -->
+            <div class="game">
+                <button class="game-button" data-choice="rock">Rock</button>
+                <button class="game-button" data-choice="paper">Paper</button>
+                <button class="game-button" data-choice="scissors">Scissors</button>
+                <button class="game-button" data-choice="lizard">Lizard</button>
+                <button class="game-button" data-choice="spock">Spock</button>
             </div>
         </div>
 
-        <!-- Level selection dropdown -->
-        <div class="level-selection">
-            <label for="level">Select Level:</label>
-            <select id="level">
-                <option value="easy">Easy</option>
-                <option value="medium">Medium</option>
-                <option value="hard">Hard</option>
-            </select>
-            
-        </div>
 
-        <!-- Display game result -->
-        <div id="result">
-            <p>Choose an option below to start the game.</p>
-        </div>
 
-        <!-- Game buttons -->
-        <div class="game">
-            <button class="game-button" data-choice="rock">Rock</button>
-            <button class="game-button" data-choice="paper">Paper</button>
-            <button class="game-button" data-choice="scissors">Scissors</button>
-            <button class="game-button" data-choice="lizard">Lizard</button>
-            <button class="game-button" data-choice="spock">Spock</button>
-        </div>
-
-        <!-- Display user's choice and computer's choice horizontally -->
+        <!-- Display user's choice and computer's choice -->
         <div class="choices">
             <div class="choice">
-                <p>Your choice:</p>
+
+                <p class="user">Your choice:</p>
                 <img id="user-choice-img" src="assets/images/rpsls.png" alt="User's Choice">
             </div>
             <div class="choice">
-                <p>Computer's choice:</p>
+                <p class="computer">Computer's choice:</p>
+
                 <img id="computer-choice-img" src="assets/images/rpsls.png" alt="Computer's Choice">
             </div>
         </div>
@@ -109,7 +117,7 @@
         <div>
             <p>Your choice: <span id="user-choice"></span></p>
             <p>Computer's choice: <span id="computer-choice"></span></p>
-            <p>Remaining tries: <span id="tries">3</span></p>
+            <p>Remaining tries: <span id="tries"></span></p>
             <p>Score: <span id="score">0</span></p>
         </div>
 
