@@ -5,13 +5,19 @@
     --text-color: #445361;
 }
 
+html {
+    min-height: 100%;
+    position: relative;
+}
 
 body {
     background-color: var(--background-color);
     font-family: "Roboto", sans-serif;
+    margin: 0;
     color: var(--text-color);
     text-align: center;
 }
+
 
 /* Heading */
 
@@ -19,17 +25,20 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-    font-size: 5rem;
+    font-size: 5.5rem;
     color: var(--text-color);
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .game-area{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    text-align: center;
     background-color: aqua;
     padding: 10px;
-    
-
-    
+    border-radius: 10px;
 }
 
 .choices {
@@ -50,6 +59,10 @@ body {
     font-size: 1.2rem;
     padding: 10px 10px 10px 10px;
    border-radius: 5px;
+   width: 50%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
   
 }
 
@@ -59,12 +72,86 @@ body {
     font-size: 1.2rem;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .choice img {
     max-width: 100%; 
     border-radius:10px;
 }
+
+
+/* All the buttons of the game */
+
+button{
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.game-button{
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    border: 2px solid #333; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.game-button:hover {
+    background-color: #fff; 
+    color: #333; 
+}
+
+.instruction-button{
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    border: 2px solid #333; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.instruction-button:hover {
+    background-color: #fff; 
+    color: #333; 
+}
+
+.refresh-button{
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    border: 2px solid #333; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, color 0.3s; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.refresh-button:hover {
+    background-color: #fff; 
+    color: #333; 
+}
+
+/* .results{
+    color: #fefefe;
+    background-color: #445361;
+    font-size: 1.2rem;
+    padding: 5px;
+   border-radius: 5px;
+   width: 50%;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+} */
 
 footer{
     position: absolute;
@@ -121,16 +208,9 @@ footer{
 }
 
 
-html {
-    min-height: 100%;
-    position: relative;
-}
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    text-align: center;
-}
+
+
 
 h1 {
     color: #333;

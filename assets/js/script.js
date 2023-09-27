@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
             // Update user and computer choices in the HTML
-            document.getElementById("user-choice").textContent = `Your choice: ${userChoice}`;
-            document.getElementById("computer-choice").textContent = `Computer's choice: ${computerChoice}`;
+            document.getElementById("user-choice").textContent = `${userChoice}`;
+            document.getElementById("computer-choice").textContent = `${computerChoice}`;
 
             // Update user and computer choice images
             document.getElementById("user-choice-img").src = `assets/images/${userChoice}.png`;
