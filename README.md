@@ -10,6 +10,8 @@ Welcome to the Rock, Paper, Scissors, Lizard, Spock game! This web-based game of
 - [How to Play](#how-to-play)
 - [Getting Started](#getting-started)
 - [Game Features](#game-features)
+- [Validation and Testing](#validation-and-testing)
+- [Deployment](#deployment)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -135,13 +137,14 @@ The site was deployed to GitHub Pages. The steps to deploy are as follows:
 
 The live link can be found here - [Go to live website](https://lucaspbj.github.io/Project-milestone-2/)
 
-## Image Credits
+## Contributing
+### Image Credits
 
 I would like to extend my gratitude to [JLChamberlain](https://github.com/JLChamberlain) for providing the amazing images used in this project. The images have greatly enhanced the visual appeal of the game and contributed to the overall user experience.
 
 Please make sure to visit JLChamberlain's portfolio for more outstanding artwork and support their creative work.
 
-## Acknowledgements
+### Acknowledgements
 
 I would like to express my gratitude to the following individual who have contributed to the development of this project:
 
