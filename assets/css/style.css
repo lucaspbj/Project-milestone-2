@@ -1,11 +1,11 @@
 /* Global style */
 :root {
-    --background-color: #fefefe; /* Background color variable */
-    --text-color: #1c1c1c; /* Text color variable */
-    --second-background-color: rgb(238, 239, 239); /* Second background color variable */
-    --button-color: #FFA500; /* Button color variable */
-    --hover-color: var(--background-color); /* Hover background color variable */
-    --hover-text-color: var(--text-color); /* Hover text color variable */
+    --background-color: #fefefe; 
+    --text-color: #1c1c1c; 
+    --second-background-color: rgb(238, 239, 239); 
+    --button-color: #FFA500; 
+    --hover-color: var(--background-color);
+    --hover-text-color: var(--text-color); 
 }
 
 html {
@@ -22,7 +22,6 @@ body {
 }
 
 /* Heading */
-
 .heading {
     width: 60%;
     margin-top: 50px;
@@ -90,7 +89,6 @@ body {
 }
 
 /* All the buttons of the game */
-
 button {
     border: none;
     padding: 0;
@@ -150,6 +148,7 @@ button {
     color: var(--text-color);
 }
 
+/* result and score */
 .score {
     font-size: 1.2rem;
     font-weight: bold;
@@ -174,6 +173,7 @@ footer {
     color: var(--background-color);
 }
 
+/* instructions popup window */
 .popup {
     display: none;
     position: fixed;
@@ -235,5 +235,11 @@ footer {
 
 .game {
     font-weight: bold;
+}
 
+/* Media query to hide the heading on screens under 600px */
+@media (max-width: 600px) {
+    .heading {
+        display: none;
+    }
 }
