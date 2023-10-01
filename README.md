@@ -88,7 +88,7 @@ After completing a game or running out of tries, you can click the "New game" bu
 
 ## Getting Started
 
-To get started, simply open the `index.html` file in your web browser. This project is designed to run in modern web browsers and doesn't require any additional setup. Once the page loads, you can explore the game interface and start playing. Enjoy!
+This project is designed to run in modern web browsers and doesn't require any additional setup. Once the page loads, you can explore the game interface and start playing. Enjoy!
 
 ## Game Features
 
