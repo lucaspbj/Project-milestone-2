@@ -2,32 +2,35 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set, viewport, and description -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rock, Paper, Scissors, Lizard, Spock game">
     <meta name="keywords" content="game, fun, rock, paper, scissors, lizard, spock">
-    <!-- Font Awesome and Google Fonts stylesheets -->
+    <!-- Link to Font Awesome and Google Fonts stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- Link to custom stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Page title -->
     <title>Rock, Paper, Scissors, Lizard, Spock</title>
 </head>
 
 <body>
     <main>
         <!-- Game title with FontAwesome icons -->
-        <h1 class="heading">
+        <div class="heading">
             <i class="fa-regular fa-hand-back-fist"></i>
             <i class="fa-regular fa-hand"></i>
             <i class="fa-regular fa-hand-scissors"></i>
             <i class="fa-regular fa-hand-lizard"></i>
             <i class="fa-regular fa-hand-spock"></i>
-        </h1>
+        </div>
 
         <div class="game-area">
+            <!-- Heading and game instructions -->
             <h2 class="heading-question">Have you ever played Rock, Paper, Scissors, Lizard, Spock?</h2>
             <h3>Let's play!</h3>
 
@@ -40,10 +43,10 @@
                     <span class="close-button">&times;</span>
                     <h2>Instructions</h2>
                     <!-- Game instructions -->
-                    <p>To start the game, choose an option among Rock, Paper, Scissors, Lizard, and Spock.</p>
+                    <p>To start the game, select your level and choose an option among Rock, Paper, Scissors, Lizard,
+                        and Spock.</p>
                     <p>Each player picks a variable and reveals it at the same time. The winner is the one who defeats
-                        the
-                        others. In a tie, the process is repeated until a winner is found.</p>
+                        the others. In a tie, the process is repeated until a winner is found.</p>
                     <p>Game Rules:
                         <br>
                         Scissors cuts Paper
@@ -78,7 +81,6 @@
                     <option value="medium">Medium</option>
                     <option value="hard">Hard</option>
                 </select>
-
             </div>
 
             <!-- Display game result -->
@@ -96,25 +98,20 @@
             </div>
         </div>
 
-
-
         <!-- Display user's choice and computer's choice -->
         <div class="choices">
             <div class="choice">
-
                 <p class="user">Your choice:</p>
                 <img id="user-choice-img" src="assets/images/rpsls.png" alt="User's Choice">
             </div>
             <div class="choice">
                 <p class="computer">Computer's choice:</p>
-
                 <img id="computer-choice-img" src="assets/images/rpsls.png" alt="Computer's Choice">
             </div>
         </div>
 
-
         <!-- Display user's choice, computer's choice, remaining tries, and score -->
-        <div>
+        <div class="score">
             <p>Your choice: <span id="user-choice"></span></p>
             <p>Computer's choice: <span id="computer-choice"></span></p>
             <p>Remaining tries: <span id="tries"></span></p>
@@ -125,7 +122,6 @@
         <div class="refresh">
             <button class="refresh-button" style="display: none;">New game</button>
         </div>
-
     </main>
     <footer>
         <!-- Footer content can be added here -->

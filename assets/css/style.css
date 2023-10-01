@@ -1,8 +1,11 @@
 /* Global style */
-
 :root {
-    --background-color: #fefefe;
-    --text-color: #445361;
+    --background-color: #fefefe; /* Background color variable */
+    --text-color: #1c1c1c; /* Text color variable */
+    --second-background-color: rgb(238, 239, 239); /* Second background color variable */
+    --button-color: #FFA500; /* Button color variable */
+    --hover-color: var(--background-color); /* Hover background color variable */
+    --hover-text-color: var(--text-color); /* Hover text color variable */
 }
 
 html {
@@ -18,57 +21,60 @@ body {
     text-align: center;
 }
 
-
 /* Heading */
 
 .heading {
+    width: 60%;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-size: 5.5rem;
-    color: var(--text-color);
-    /* background-color: aquamarine; */
+    padding: 10px;
+    color: var(--button-color);
+    background-color: var(--second-background-color);
+    border-radius: 5px;
 }
 
-.game-area{
+.game-area {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
     text-align: center;
-    background-color: aqua;
+    background-color: var(--second-background-color);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .choices {
-    display: flex; 
-    justify-content:space-around; 
-    /* background-color: #445361; */
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .choice {
-    text-align: center; 
-    margin: 10px; 
-    
+    text-align: center;
+    margin: 10px;
 }
 
-.user{
-    color: #fefefe;
-    background-color: #445361;
+.user {
+    font-weight: bold;
+    color: var(--text-color);
+    background-color: var(--second-background-color);
     font-size: 1.2rem;
     padding: 10px 10px 10px 10px;
-   border-radius: 5px;
-   width: 50%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-  
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.computer{
-    color: #fefefe;
-    background-color: #445361;
+.computer {
+    font-weight: bold;
+    color: var(--text-color);
+    background-color: var(--second-background-color);
     font-size: 1.2rem;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
@@ -79,81 +85,84 @@ body {
 }
 
 .choice img {
-    max-width: 100%; 
-    border-radius:10px;
+    max-width: 100%;
+    border-radius: 10px;
 }
-
 
 /* All the buttons of the game */
 
-button{
+button {
     border: none;
     padding: 0;
     background: none;
     cursor: pointer;
 }
 
-.game-button{
-    background-color: #333; 
-    color: #fff; 
-    padding: 10px 20px; 
-    font-size: 1rem; 
-    border: 2px solid #333; 
-    border-radius: 4px; 
-    transition: background-color 0.3s, color 0.3s; 
+.game-button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid var(--text-color);
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .game-button:hover {
-    background-color: #fff; 
-    color: #333; 
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-.instruction-button{
-    background-color: #333; 
-    color: #fff; 
-    padding: 10px 20px; 
-    font-size: 1rem; 
-    border: 2px solid #333; 
-    border-radius: 4px; 
-    transition: background-color 0.3s, color 0.3s; 
+.instruction-button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid var(--text-color);
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .instruction-button:hover {
-    background-color: #fff; 
-    color: #333; 
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-.refresh-button{
-    background-color: #333; 
-    color: #fff; 
-    padding: 10px 20px; 
-    font-size: 1rem; 
-    border: 2px solid #333; 
-    border-radius: 4px; 
-    transition: background-color 0.3s, color 0.3s; 
+.refresh{
+    padding: 10px;
+}
+
+.refresh-button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid var(--text-color);
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 .refresh-button:hover {
-    background-color: #fff; 
-    color: #333; 
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-/* .results{
-    color: #fefefe;
-    background-color: #445361;
+.score {
     font-size: 1.2rem;
-    padding: 5px;
-   border-radius: 5px;
-   width: 50%;
-   text-align: center;
-   margin-left: auto;
-   margin-right: auto;
-} */
+    font-weight: bold;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    text-align: center;
+    background-color: var(--second-background-color);
+    padding: 1px;
+  }
 
-footer{
+footer {
     position: absolute;
     width: 100%;
     left: 0;
@@ -164,7 +173,6 @@ footer{
     text-align: center;
     color: var(--background-color);
 }
-
 
 .popup {
     display: none;
@@ -207,31 +215,25 @@ footer{
     }
 }
 
-
-
-
-
-
-h1 {
-    color: #333;
-}
-
 #game {
     margin-top: 20px;
 }
 
-button {
-    font-size: 18px;
-    margin: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
 #result {
+    font-weight: bold;
     margin-top: 20px;
     font-size: 18px;
 }
 
 #result p {
     margin: 10px 0;
+}
+
+.level-selection{
+    padding: 10px;
+}
+
+.game {
+    font-weight: bold;
+
 }

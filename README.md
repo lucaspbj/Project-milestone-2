@@ -1,39 +1,66 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors, Lizard, Spock Game
 
-Welcome,
+This is a simple web-based Rock, Paper, Scissors, Lizard, Spock game that you can play in your web browser. It features a user-friendly interface and easy-to-follow instructions.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Game Instructions](#game-instructions)
+- [Game Levels](#game-levels)
+- [How to Play](#how-to-play)
+- [Rules](#rules)
+- [License](#license)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+## Getting Started
 
-## Codeanywhere Reminders
+To get started, simply open the `index.html` file in your web browser. You can also access the live version of the game by [clicking here](#insert-link-to-live-version).
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Game Instructions
 
-`python3 -m http.server`
+When you open the game, you'll see the following options:
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- **Game Title**: An eye-catching title with cool icons.
+- **Instructions Button**: Click this button to view game instructions.
+- **Level Selection**: Choose your desired game level (Easy, Medium, or Hard) from the dropdown menu.
+- **Game Result**: Initially, it shows instructions to choose an option.
+- **Game Buttons**: Buttons for Rock, Paper, Scissors, Lizard, and Spock.
+- **User's Choice**: Displays your choice.
+- **Computer's Choice**: Displays the computer's choice.
+- **Remaining Tries**: Shows the number of remaining tries.
+- **Score**: Displays your score.
+- **New Game Button**: Use this button to start a new game.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Game Levels
 
-`http_server`
+This game offers three levels of difficulty:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- **Easy**: You have 5 tries.
+- **Medium**: You have 3 tries.
+- **Hard**: You have only 1 try.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## How to Play
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+1. Choose your desired level from the dropdown menu.
+2. Click on one of the game buttons (Rock, Paper, Scissors, Lizard, Spock) to make your choice.
+3. The computer will randomly make a choice as well.
+4. The game result will be displayed, indicating whether you won, lost, or it's a draw.
+5. Your score will be updated accordingly.
+6. Keep playing until you run out of tries or choose to start a new game.
 
-To log into the Heroku toolbelt CLI:
+## Rules
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The game follows the standard rules of Rock, Paper, Scissors, Lizard, Spock:
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- Scissors cuts Paper
+- Paper covers Rock
+- Rock crushes Lizard
+- Lizard poisons Spock
+- Spock smashes Scissors
+- Scissors decapitates Lizard
+- Lizard eats Paper
+- Paper disproves Spock
+- Spock vaporizes Rock
+- Rock crushes Scissors
 
----
+## License
 
-Happy coding!
+This game is licensed under the [MIT License](LICENSE).

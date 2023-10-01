@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Get the level selection dropdown element
     const levelDropdown = document.getElementById("level");
 
+    // Initialize the user interface
     initUi();
+
     // Add a change event listener to the level dropdown
     levelDropdown.addEventListener("change", function () {
         const selectedLevel = levelDropdown.value;
@@ -25,10 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (selectedLevel === "hard") {
             tries = 1; // Set to hard level (1 try)
         }
-        // console.log(
-        //     selectedLevel
-        // )
-        // Update the remaining tries in the UI
         document.querySelector("#tries").textContent = tries;
     });
 
@@ -48,9 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const result = getResult(userChoice, computerChoice);
             updateUI(result);
-
-
-            // tries--;
 
             if (tries === 0) {
                 endGame();
@@ -82,13 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to update the UI with the game result and remaining tries
     function updateUI(result) {
-
         tries--;
-
         document.querySelector("#result p").textContent = getResultText(result);
         document.querySelector("#tries").textContent = tries;
         document.querySelector("#score").textContent = userScore;
-
     }
 
     // Function to get the text representation of the game result
@@ -110,13 +102,12 @@ document.addEventListener("DOMContentLoaded", function () {
         // Show the "New Game" button when the game ends
         refreshButton.style.display = "block";
     }
+
+    // Function to initialize the user interface
     function initUi() {
         document.querySelector("#tries").textContent = tries;
     }
-
 });
-
-
 
 // Additional code outside of the main game logic
 
