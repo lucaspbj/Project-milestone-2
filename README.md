@@ -13,7 +13,6 @@ Welcome to the Rock, Paper, Scissors, Lizard, Spock game! This web-based game of
 - [Validation and Testing](#validation-and-testing)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 
