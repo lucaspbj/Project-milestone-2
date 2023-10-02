@@ -104,6 +104,7 @@ button {
     border: 2px solid var(--text-color);
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
+    margin: 2px;
 }
 
 .game-button:hover {
@@ -237,9 +238,17 @@ footer {
     font-weight: bold;
 }
 
-/* Media query to hide the heading on screens under 600px */
-@media (max-width: 600px) {
+/* Media query to hide the heading on screens under 875px */
+@media (max-width: 875px) {
     .heading {
-        display: none;
+        font-size: 3rem;
     }
 }
+
+/* Media query to hide the heading on screens under 475px */
+@media (max-width: 475px) {
+    .heading {
+        font-size: 2rem;
+    }
+}
+

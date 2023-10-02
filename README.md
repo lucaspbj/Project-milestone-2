@@ -141,8 +141,6 @@ The live link can be found here - [Go to live website](https://lucaspbj.github.i
 
 I would like to extend my gratitude to [JLChamberlain](https://github.com/JLChamberlain) for providing the amazing images used in this project. The images have greatly enhanced the visual appeal of the game and contributed to the overall user experience.
 
-Please make sure to visit JLChamberlain's portfolio for more outstanding artwork and support their creative work.
-
 ### Acknowledgements
 
 I would like to express my gratitude to the following individual who have contributed to the development of this project:
