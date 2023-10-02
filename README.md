@@ -124,6 +124,8 @@ The code in this project has been validated using various online validators to e
 
 ![A picture of the accessibility level of the website](documentation/accessibility.png)
 
+
+
 ## Deployment
 
 The site was deployed to GitHub Pages. The steps to deploy are as follows:

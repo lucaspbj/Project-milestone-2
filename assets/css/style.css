@@ -1,13 +1,15 @@
-/* Global style */
+/* Global styles */
 :root {
-    --background-color: #fefefe; 
-    --text-color: #1c1c1c; 
-    --second-background-color: rgb(238, 239, 239); 
-    --button-color: #FFA500; 
+    /* Color variables */
+    --background-color: #fefefe;
+    --text-color: #1c1c1c;
+    --second-background-color: rgb(238, 239, 239);
+    --button-color: #FFA500;
     --hover-color: var(--background-color);
-    --hover-text-color: var(--text-color); 
+    --hover-text-color: var(--text-color);
 }
 
+/* Set styles for HTML and body elements */
 html {
     min-height: 100%;
     position: relative;
@@ -21,13 +23,11 @@ body {
     text-align: center;
 }
 
-/* Heading */
+/* Heading styles */
 .heading {
+    /* Centered and styled heading */
     width: 60%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 50px auto;
     text-align: center;
     font-size: 5.5rem;
     padding: 10px;
@@ -36,60 +36,51 @@ body {
     border-radius: 5px;
 }
 
+/* Game area styles */
 .game-area {
+    /* Centered game area */
     width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
+    margin: 1% auto;
     text-align: center;
     background-color: var(--second-background-color);
     padding: 10px;
     border-radius: 5px;
 }
 
+/* Choice elements layout */
 .choices {
     display: flex;
     justify-content: space-evenly;
 }
 
 .choice {
+    /* Styling for user and computer choices */
     text-align: center;
     margin: 10px;
 }
 
-.user {
+.user, .computer {
+    /* Styling for user and computer choice text */
     font-weight: bold;
     color: var(--text-color);
     background-color: var(--second-background-color);
     font-size: 1.2rem;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     border-radius: 5px;
     width: 50%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.computer {
-    font-weight: bold;
-    color: var(--text-color);
-    background-color: var(--second-background-color);
-    font-size: 1.2rem;
-    padding: 10px 10px 10px 10px;
-    border-radius: 5px;
-    width: 60%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .choice img {
+    /* Styling for choice images */
     max-width: 100%;
     border-radius: 10px;
 }
 
-/* All the buttons of the game */
+/* Button styles */
 button {
+    /* Reset default button styles */
     border: none;
     padding: 0;
     background: none;
@@ -97,6 +88,7 @@ button {
 }
 
 .game-button {
+    /* Styling for game buttons */
     background-color: var(--button-color);
     color: var(--text-color);
     padding: 10px 20px;
@@ -108,11 +100,13 @@ button {
 }
 
 .game-button:hover {
-    background-color: var(--background-color);
-    color: var(--text-color);
+    /* Button hover effect */
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
 }
 
 .instruction-button {
+    /* Styling for instruction button */
     background-color: var(--button-color);
     color: var(--text-color);
     padding: 10px 20px;
@@ -123,15 +117,18 @@ button {
 }
 
 .instruction-button:hover {
-    background-color: var(--background-color);
-    color: var(--text-color);
+    /* Instruction button hover effect */
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
 }
 
-.refresh{
+.refresh {
+    /* Styling for the refresh button container */
     padding: 10px;
 }
 
 .refresh-button {
+    /* Styling for the refresh button */
     background-color: var(--button-color);
     color: var(--text-color);
     padding: 10px 20px;
@@ -140,29 +137,30 @@ button {
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .refresh-button:hover {
-    background-color: var(--background-color);
-    color: var(--text-color);
+    /* Refresh button hover effect */
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
 }
 
-/* result and score */
+/* Score and result styles */
 .score {
+    /* Styling for score display */
     font-size: 1.2rem;
     font-weight: bold;
     max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
+    margin: 1% auto;
     text-align: center;
     background-color: var(--second-background-color);
     padding: 1px;
-  }
+}
 
+/* Footer styles */
 footer {
+    /* Styling for the footer */
     position: absolute;
     width: 100%;
     left: 0;
@@ -174,11 +172,12 @@ footer {
     color: var(--background-color);
 }
 
-/* instructions popup window */
+/* Instructions popup styles */
 .popup {
+    /* Styling for the instructions popup */
     display: none;
     position: fixed;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -190,6 +189,7 @@ footer {
 }
 
 .popup-content {
+    /* Styling for the popup content */
     color: var(--text-color);
     background-color: var(--background-color);
     padding: 20px;
@@ -199,6 +199,7 @@ footer {
 }
 
 .close-button {
+    /* Styling for the close button */
     position: absolute;
     top: 10px;
     right: 10px;
@@ -206,49 +207,17 @@ footer {
     cursor: pointer;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-#game {
-    margin-top: 20px;
-}
-
-#result {
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-#result p {
-    margin: 10px 0;
-}
-
-.level-selection{
-    padding: 10px;
-}
-
-.game {
-    font-weight: bold;
-}
-
-/* Media query to hide the heading on screens under 875px */
+/* Media queries */
 @media (max-width: 875px) {
+    /* Responsive styles for screens under 875px */
     .heading {
         font-size: 3rem;
     }
 }
 
-/* Media query to hide the heading on screens under 475px */
 @media (max-width: 475px) {
+    /* Responsive styles for screens under 475px */
     .heading {
         font-size: 2rem;
     }
 }
-
